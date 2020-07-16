@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the AgoraRtcEngine class from the agora_rtc_engine library, for the Dart programming language.">
+  <title>AgoraRtcEngine class - agora_rtc_engine library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  <!-- header placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">agora_rtc_engine</a></li>
+    <li><a href="agora_rtc_engine/agora_rtc_engine-library.html">agora_rtc_engine</a></li>
+    <li class="self-crumb">AgoraRtcEngine class</li>
+  </ol>
+  <div class="self-name">AgoraRtcEngine</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="index.html">agora_rtc_engine</a></li>
+      <li><a href="agora_rtc_engine/agora_rtc_engine-library.html">agora_rtc_engine</a></li>
+      <li class="self-crumb">AgoraRtcEngine class</li>
+    </ol>
+    
+    <h5>agora_rtc_engine library</h5>
+    <ol>
+      <li class="section-title"><a href="agora_rtc_engine/agora_rtc_engine-library.html#classes">Classes</a></li>
+      <li><a href="agora_rtc_engine/AgoraCameraRect-class.html">AgoraCameraRect</a></li>
+      <li><a href="agora_rtc_engine/AgoraChannelMediaRelayConfiguration-class.html">AgoraChannelMediaRelayConfiguration</a></li>
+      <li><a href="agora_rtc_engine/AgoraImage-class.html">AgoraImage</a></li>
+      <li><a href="agora_rtc_engine/AgoraLastmileProbeConfig-class.html">AgoraLastmileProbeConfig</a></li>
+      <li><a href="agora_rtc_engine/AgoraLastmileProbeResult-class.html">AgoraLastmileProbeResult</a></li>
+      <li><a href="agora_rtc_engine/AgoraLiveInjectStreamConfig-class.html">AgoraLiveInjectStreamConfig</a></li>
+      <li><a href="agora_rtc_engine/AgoraLiveTranscoding-class.html">AgoraLiveTranscoding</a></li>
+      <li><a href="agora_rtc_engine/AgoraLiveTranscodingUser-class.html">AgoraLiveTranscodingUser</a></li>
+      <li><a href="agora_rtc_engine/AgoraRenderWidget-class.html">AgoraRenderWidget</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine-class.html">AgoraRtcEngine</a></li>
+      <li><a href="agora_rtc_engine/AgoraUserInfo-class.html">AgoraUserInfo</a></li>
+      <li><a href="agora_rtc_engine/AudioVolumeInfo-class.html">AudioVolumeInfo</a></li>
+      <li><a href="agora_rtc_engine/BeautyOptions-class.html">BeautyOptions</a></li>
+      <li><a href="agora_rtc_engine/LocalAudioStats-class.html">LocalAudioStats</a></li>
+      <li><a href="agora_rtc_engine/LocalVideoStats-class.html">LocalVideoStats</a></li>
+      <li><a href="agora_rtc_engine/NetworkLinkReport-class.html">NetworkLinkReport</a></li>
+      <li><a href="agora_rtc_engine/RemoteAudioStats-class.html">RemoteAudioStats</a></li>
+      <li><a href="agora_rtc_engine/RemoteVideoStats-class.html">RemoteVideoStats</a></li>
+      <li><a href="agora_rtc_engine/RtcStats-class.html">RtcStats</a></li>
+      <li><a href="agora_rtc_engine/VideoEncoderConfiguration-class.html">VideoEncoderConfiguration</a></li>
+      <li><a href="agora_rtc_engine/WatermarkOptions-class.html">WatermarkOptions</a></li>
+    
+    
+    
+      <li class="section-title"><a href="agora_rtc_engine/agora_rtc_engine-library.html#constants">Constants</a></li>
+      <li><a href="agora_rtc_engine/AgoraVideoBitrateCompatible-constant.html">AgoraVideoBitrateCompatible</a></li>
+      <li><a href="agora_rtc_engine/AgoraVideoBitrateStandard-constant.html">AgoraVideoBitrateStandard</a></li>
+    
+    
+    
+      <li class="section-title"><a href="agora_rtc_engine/agora_rtc_engine-library.html#enums">Enums</a></li>
+      <li><a href="agora_rtc_engine/AgoraAudioCodecProfileType-class.html">AgoraAudioCodecProfileType</a></li>
+      <li><a href="agora_rtc_engine/AgoraAudioEqualizationBandFrequency-class.html">AgoraAudioEqualizationBandFrequency</a></li>
+      <li><a href="agora_rtc_engine/AgoraAudioReverbType-class.html">AgoraAudioReverbType</a></li>
+      <li><a href="agora_rtc_engine/AgoraAudioSampleRateType-class.html">AgoraAudioSampleRateType</a></li>
+      <li><a href="agora_rtc_engine/AgoraVideoCodecProfileType-class.html">AgoraVideoCodecProfileType</a></li>
+      <li><a href="agora_rtc_engine/AudioProfile-class.html">AudioProfile</a></li>
+      <li><a href="agora_rtc_engine/AudioScenario-class.html">AudioScenario</a></li>
+      <li><a href="agora_rtc_engine/ChannelProfile-class.html">ChannelProfile</a></li>
+      <li><a href="agora_rtc_engine/ClientRole-class.html">ClientRole</a></li>
+      <li><a href="agora_rtc_engine/DegradationPreference-class.html">DegradationPreference</a></li>
+      <li><a href="agora_rtc_engine/LighteningContrastLevel-class.html">LighteningContrastLevel</a></li>
+      <li><a href="agora_rtc_engine/LocalVideoStreamError-class.html">LocalVideoStreamError</a></li>
+      <li><a href="agora_rtc_engine/LocalVideoStreamState-class.html">LocalVideoStreamState</a></li>
+      <li><a href="agora_rtc_engine/StreamFallbackOptions-class.html">StreamFallbackOptions</a></li>
+      <li><a href="agora_rtc_engine/UserPriority-class.html">UserPriority</a></li>
+      <li><a href="agora_rtc_engine/VideoOutputOrientationMode-class.html">VideoOutputOrientationMode</a></li>
+      <li><a href="agora_rtc_engine/VideoRenderMode-class.html">VideoRenderMode</a></li>
+      <li><a href="agora_rtc_engine/VoiceChanger-class.html">VoiceChanger</a></li>
+    
+    
+    </ol>
+  </div>
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1><span class="kind-class">AgoraRtcEngine</span> class </h1></div>
+
+    
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="AgoraRtcEngine" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/AgoraRtcEngine.html">AgoraRtcEngine</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span>         
+        </dt>
+        <dd class="inherited">
+          The hash code for this object. <a href="agora_rtc_engine/AgoraRtcEngine/hashCode.html">[...]</a>
+                  <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span>         
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object.
+                  <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+                  </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed. <a href="agora_rtc_engine/AgoraRtcEngine/noSuchMethod.html">[...]</a>
+                  <div class="features">inherited</div>
+</dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+                  </dt>
+        <dd class="inherited">
+          Returns a string representation of this object.
+                  <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">dynamic</span> <span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+                  </dt>
+        <dd class="inherited">
+          The equality operator. <a href="agora_rtc_engine/AgoraRtcEngine/operator_equals.html">[...]</a>
+                  <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="static-properties">
+      <h2>Static Properties</h2>
+
+      <dl class="properties">
+        <dt id="onActiveSpeaker" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onActiveSpeaker.html">onActiveSpeaker</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Reports which user is the loudest speaker. <a href="agora_rtc_engine/AgoraRtcEngine/onActiveSpeaker.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onApiCallExecuted" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onApiCallExecuted.html">onApiCallExecuted</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-error"><span class="type-annotation">int</span> <span class="parameter-name">error</span>, </span> <span class="parameter" id="param-api"><span class="type-annotation">String</span> <span class="parameter-name">api</span></span> <span class="parameter" id="param-result"><span class="type-annotation">String</span> <span class="parameter-name">result</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when an API method is executed.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onAudioEffectFinished" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onAudioEffectFinished.html">onAudioEffectFinished</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-soundId"><span class="type-annotation">int</span> <span class="parameter-name">soundId</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when a remote user starts audio mixing.
+Occurs when a remote user finishes audio mixing.
+Occurs when the local audio effect playback finishes.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onAudioRouteChanged" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onAudioRouteChanged.html">onAudioRouteChanged</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-routing"><span class="type-annotation">int</span> <span class="parameter-name">routing</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the local audio pkayout route changes. <a href="agora_rtc_engine/AgoraRtcEngine/onAudioRouteChanged.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onAudioVolumeIndication" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onAudioVolumeIndication.html">onAudioVolumeIndication</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-totalVolume"><span class="type-annotation">int</span> <span class="parameter-name">totalVolume</span>, </span> <span class="parameter" id="param-speakers"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="agora_rtc_engine/AudioVolumeInfo-class.html">AudioVolumeInfo</a></span>&gt;</span></span> <span class="parameter-name">speakers</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Reports which users are speaking and the speakers' volume. <a href="agora_rtc_engine/AgoraRtcEngine/onAudioVolumeIndication.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onCameraExposureAreaChanged" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onCameraExposureAreaChanged.html">onCameraExposureAreaChanged</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-rect"><span class="type-annotation"><a href="agora_rtc_engine/AgoraCameraRect-class.html">AgoraCameraRect</a></span> <span class="parameter-name">rect</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the camera exposure area changes. <a href="agora_rtc_engine/AgoraRtcEngine/onCameraExposureAreaChanged.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onCameraFocusAreaChanged" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onCameraFocusAreaChanged.html">onCameraFocusAreaChanged</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-rect"><span class="type-annotation"><a href="agora_rtc_engine/AgoraCameraRect-class.html">AgoraCameraRect</a></span> <span class="parameter-name">rect</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when a camera focus area changes. <a href="agora_rtc_engine/AgoraRtcEngine/onCameraFocusAreaChanged.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onChannelMediaRelayChanged" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onChannelMediaRelayChanged.html">onChannelMediaRelayChanged</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-state"><span class="type-annotation">int</span> <span class="parameter-name">state</span></span> <span class="parameter" id="param-errorCode"><span class="type-annotation">int</span> <span class="parameter-name">errorCode</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when received channel media relay changed
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onClientRoleChanged" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onClientRoleChanged.html">onClientRoleChanged</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-oldRole"><span class="type-annotation"><a href="agora_rtc_engine/ClientRole-class.html">ClientRole</a></span> <span class="parameter-name">oldRole</span></span> <span class="parameter" id="param-newRole"><span class="type-annotation"><a href="agora_rtc_engine/ClientRole-class.html">ClientRole</a></span> <span class="parameter-name">newRole</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the user role switches in a live broadcast.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onConnectionLost" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onConnectionLost.html">onConnectionLost</a></span>
+          <span class="signature">&#8596; VoidCallback</span>         
+        </dt>
+        <dd>
+          Occurs when the SDK cannot reconnect to Agora's edge server 10 seconds after its connection to the server is interrupted. <a href="agora_rtc_engine/AgoraRtcEngine/onConnectionLost.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onConnectionStateChanged" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onConnectionStateChanged.html">onConnectionStateChanged</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-state"><span class="type-annotation">int</span> <span class="parameter-name">state</span></span> <span class="parameter" id="param-reason"><span class="type-annotation">int</span> <span class="parameter-name">reason</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the network connection state changes.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onError" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onError.html">onError</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-err"><span class="type-annotation">dynamic</span> <span class="parameter-name">err</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Reports an error during SDK runtime. <a href="agora_rtc_engine/AgoraRtcEngine/onError.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onFirstLocalAudioFrame" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onFirstLocalAudioFrame.html">onFirstLocalAudioFrame</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-elapsed"><span class="type-annotation">int</span> <span class="parameter-name">elapsed</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the first local audio frame is sent.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onFirstLocalVideoFrame" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onFirstLocalVideoFrame.html">onFirstLocalVideoFrame</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-width"><span class="type-annotation">int</span> <span class="parameter-name">width</span></span> <span class="parameter" id="param-height"><span class="type-annotation">int</span> <span class="parameter-name">height</span></span> <span class="parameter" id="param-elapsed"><span class="type-annotation">int</span> <span class="parameter-name">elapsed</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the first local video frame is sent. <a href="agora_rtc_engine/AgoraRtcEngine/onFirstLocalVideoFrame.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onFirstRemoteAudioDecoded" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onFirstRemoteAudioDecoded.html">onFirstRemoteAudioDecoded</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span> <span class="parameter" id="param-elapsed"><span class="type-annotation">int</span> <span class="parameter-name">elapsed</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the SDK decodes the first remote audio frame for playback.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onFirstRemoteAudioFrame" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onFirstRemoteAudioFrame.html">onFirstRemoteAudioFrame</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span> <span class="parameter" id="param-elapsed"><span class="type-annotation">int</span> <span class="parameter-name">elapsed</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the first remote audio frame is received.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onFirstRemoteVideoFrame" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onFirstRemoteVideoFrame.html">onFirstRemoteVideoFrame</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span> <span class="parameter" id="param-width"><span class="type-annotation">int</span> <span class="parameter-name">width</span></span> <span class="parameter" id="param-height"><span class="type-annotation">int</span> <span class="parameter-name">height</span></span> <span class="parameter" id="param-elapsed"><span class="type-annotation">int</span> <span class="parameter-name">elapsed</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the first remote video frame is rendered. <a href="agora_rtc_engine/AgoraRtcEngine/onFirstRemoteVideoFrame.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onJoinChannelSuccess" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onJoinChannelSuccess.html">onJoinChannelSuccess</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-channel"><span class="type-annotation">String</span> <span class="parameter-name">channel</span>, </span> <span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span> <span class="parameter" id="param-elapsed"><span class="type-annotation">int</span> <span class="parameter-name">elapsed</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when a user joins a specified channel. <a href="agora_rtc_engine/AgoraRtcEngine/onJoinChannelSuccess.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onLastmileProbeTestResult" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onLastmileProbeTestResult.html">onLastmileProbeTestResult</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-result"><span class="type-annotation"><a href="agora_rtc_engine/AgoraLastmileProbeResult-class.html">AgoraLastmileProbeResult</a></span> <span class="parameter-name">result</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Reports the last-mile network probe result.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onLastmileQuality" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onLastmileQuality.html">onLastmileQuality</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-quality"><span class="type-annotation">int</span> <span class="parameter-name">quality</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Reports the last mile network quality of the local user once every two seconds before the user joins a channel.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onLeaveChannel" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onLeaveChannel.html">onLeaveChannel</a></span>
+          <span class="signature">&#8596; VoidCallback</span>         
+        </dt>
+        <dd>
+          Occurs when a user leaves the channel. <a href="agora_rtc_engine/AgoraRtcEngine/onLeaveChannel.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onLocalAudioMixingStateChanged" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onLocalAudioMixingStateChanged.html">onLocalAudioMixingStateChanged</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-state"><span class="type-annotation">int</span> <span class="parameter-name">state</span></span> <span class="parameter" id="param-errorCode"><span class="type-annotation">int</span> <span class="parameter-name">errorCode</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when a local audio mixing state changed.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onLocalAudioStateChanged" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onLocalAudioStateChanged.html">onLocalAudioStateChanged</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-error"><span class="type-annotation">int</span> <span class="parameter-name">error</span></span> <span class="parameter" id="param-state"><span class="type-annotation">int</span> <span class="parameter-name">state</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the local audio stream state changes. <a href="agora_rtc_engine/AgoraRtcEngine/onLocalAudioStateChanged.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onLocalAudioStats" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onLocalAudioStats.html">onLocalAudioStats</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-stats"><span class="type-annotation"><a href="agora_rtc_engine/LocalAudioStats-class.html">LocalAudioStats</a></span> <span class="parameter-name">stats</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Reports the statistics of the uploading local audio streams. <a href="agora_rtc_engine/AgoraRtcEngine/onLocalAudioStats.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onLocalPublishFallbackToAudioOnly" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onLocalPublishFallbackToAudioOnly.html">onLocalPublishFallbackToAudioOnly</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-isFallbackOrRecover"><span class="type-annotation">bool</span> <span class="parameter-name">isFallbackOrRecover</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the published media stream falls back to an audio-only stream due to poor network conditions or switches back to video stream after the network conditions improve. <a href="agora_rtc_engine/AgoraRtcEngine/onLocalPublishFallbackToAudioOnly.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onLocalVideoStateChanged" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onLocalVideoStateChanged.html">onLocalVideoStateChanged</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-localVideoState"><span class="type-annotation"><a href="agora_rtc_engine/LocalVideoStreamState-class.html">LocalVideoStreamState</a></span> <span class="parameter-name">localVideoState</span>, </span> <span class="parameter" id="param-error"><span class="type-annotation"><a href="agora_rtc_engine/LocalVideoStreamError-class.html">LocalVideoStreamError</a></span> <span class="parameter-name">error</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the local video stream state changes. <a href="agora_rtc_engine/AgoraRtcEngine/onLocalVideoStateChanged.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onLocalVideoStats" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onLocalVideoStats.html">onLocalVideoStats</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-stats"><span class="type-annotation"><a href="agora_rtc_engine/LocalVideoStats-class.html">LocalVideoStats</a></span> <span class="parameter-name">stats</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Reports the statistics of the uploading local video streams. <a href="agora_rtc_engine/AgoraRtcEngine/onLocalVideoStats.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onMediaEngineLoadSuccess" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onMediaEngineLoadSuccess.html">onMediaEngineLoadSuccess</a></span>
+          <span class="signature">&#8596; VoidCallback</span>         
+        </dt>
+        <dd>
+          Occurs when the media engine is loaded.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onMediaEngineStartCallSuccess" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onMediaEngineStartCallSuccess.html">onMediaEngineStartCallSuccess</a></span>
+          <span class="signature">&#8596; VoidCallback</span>         
+        </dt>
+        <dd>
+          Occurs when the media engine starts.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onNetworkQuality" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onNetworkQuality.html">onNetworkQuality</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span> <span class="parameter" id="param-txQuality"><span class="type-annotation">int</span> <span class="parameter-name">txQuality</span></span> <span class="parameter" id="param-rxQuality"><span class="type-annotation">int</span> <span class="parameter-name">rxQuality</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Reports the last mile network quality of each user in the channel once every two seconds. <a href="agora_rtc_engine/AgoraRtcEngine/onNetworkQuality.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onNetworkTypeChanged" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onNetworkTypeChanged.html">onNetworkTypeChanged</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-type"><span class="type-annotation">int</span> <span class="parameter-name">type</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the local network type changes. <a href="agora_rtc_engine/AgoraRtcEngine/onNetworkTypeChanged.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onReceivedChannelMediaRelayEvent" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onReceivedChannelMediaRelayEvent.html">onReceivedChannelMediaRelayEvent</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-event"><span class="type-annotation">int</span> <span class="parameter-name">event</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when received channel media relay event
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onRegisteredLocalUser" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onRegisteredLocalUser.html">onRegisteredLocalUser</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-userAccount"><span class="type-annotation">String</span> <span class="parameter-name">userAccount</span>, </span> <span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the local user successfully registers a user account by calling the registerLocalUserAccount or joinChannelByUserAccount method.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onRejoinChannelSuccess" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onRejoinChannelSuccess.html">onRejoinChannelSuccess</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-channel"><span class="type-annotation">String</span> <span class="parameter-name">channel</span>, </span> <span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span> <span class="parameter" id="param-elapsed"><span class="type-annotation">int</span> <span class="parameter-name">elapsed</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when a user rejoins the channel after being disconnected due to network problems. <a href="agora_rtc_engine/AgoraRtcEngine/onRejoinChannelSuccess.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onRemoteAudioStateChanged" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onRemoteAudioStateChanged.html">onRemoteAudioStateChanged</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span> <span class="parameter" id="param-state"><span class="type-annotation">int</span> <span class="parameter-name">state</span></span> <span class="parameter" id="param-reason"><span class="type-annotation">int</span> <span class="parameter-name">reason</span></span> <span class="parameter" id="param-elapsed"><span class="type-annotation">int</span> <span class="parameter-name">elapsed</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the remote audio stream state changes. <a href="agora_rtc_engine/AgoraRtcEngine/onRemoteAudioStateChanged.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onRemoteAudioStats" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onRemoteAudioStats.html">onRemoteAudioStats</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-stats"><span class="type-annotation"><a href="agora_rtc_engine/RemoteAudioStats-class.html">RemoteAudioStats</a></span> <span class="parameter-name">stats</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Reports the statistics of the audio stream from each remote user/host. <a href="agora_rtc_engine/AgoraRtcEngine/onRemoteAudioStats.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onRemoteSubscribeFallbackToAudioOnly" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onRemoteSubscribeFallbackToAudioOnly.html">onRemoteSubscribeFallbackToAudioOnly</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span>, </span> <span class="parameter" id="param-isFallbackOrRecover"><span class="type-annotation">bool</span> <span class="parameter-name">isFallbackOrRecover</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the subscribed media stream falls back to audio-only stream due to poor network conditions or switches back to video stream after the network conditions improve. <a href="agora_rtc_engine/AgoraRtcEngine/onRemoteSubscribeFallbackToAudioOnly.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onRemoteVideoStateChanged" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onRemoteVideoStateChanged.html">onRemoteVideoStateChanged</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span> <span class="parameter" id="param-state"><span class="type-annotation">int</span> <span class="parameter-name">state</span></span> <span class="parameter" id="param-reason"><span class="type-annotation">int</span> <span class="parameter-name">reason</span></span> <span class="parameter" id="param-elapsed"><span class="type-annotation">int</span> <span class="parameter-name">elapsed</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the remote video stream state changes.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onRemoteVideoStats" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onRemoteVideoStats.html">onRemoteVideoStats</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-stats"><span class="type-annotation"><a href="agora_rtc_engine/RemoteVideoStats-class.html">RemoteVideoStats</a></span> <span class="parameter-name">stats</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Reports the statistics of the video stream from each remote user/host. <a href="agora_rtc_engine/AgoraRtcEngine/onRemoteVideoStats.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onRequestToken" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onRequestToken.html">onRequestToken</a></span>
+          <span class="signature">&#8596; VoidCallback</span>         
+        </dt>
+        <dd>
+          Occurs when the token expires.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onRtcStats" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onRtcStats.html">onRtcStats</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-stats"><span class="type-annotation"><a href="agora_rtc_engine/RtcStats-class.html">RtcStats</a></span> <span class="parameter-name">stats</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Reports the statistics of the RtcEngine once every two seconds.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onRtmpStreamingStateChanged" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onRtmpStreamingStateChanged.html">onRtmpStreamingStateChanged</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="param-error"><span class="type-annotation">int</span> <span class="parameter-name">error</span></span> <span class="parameter" id="param-state"><span class="type-annotation">int</span> <span class="parameter-name">state</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the state of the RTMP streaming changes.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onStreamInjectedStatus" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onStreamInjectedStatus.html">onStreamInjectedStatus</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-json"><span class="type-annotation">Map<span class="signature">&lt;<wbr><span class="type-parameter">String</span>, <span class="type-parameter">dynamic</span>&gt;</span></span> <span class="parameter-name">json</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the CDN live streaming settings are updated.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onStreamPublished" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onStreamPublished.html">onStreamPublished</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="param-errorCode"><span class="type-annotation">int</span> <span class="parameter-name">errorCode</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the stream published
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onStreamUnpublished" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onStreamUnpublished.html">onStreamUnpublished</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the stream unpublished
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onTokenPrivilegeWillExpire" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onTokenPrivilegeWillExpire.html">onTokenPrivilegeWillExpire</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-token"><span class="type-annotation">String</span> <span class="parameter-name">token</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the token expires in 30 seconds.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onTranscodingUpdated" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onTranscodingUpdated.html">onTranscodingUpdated</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">()</span></span>         
+        </dt>
+        <dd>
+          Occurs when the transcoding updated
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onUpdatedUserInfo" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onUpdatedUserInfo.html">onUpdatedUserInfo</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-userInfo"><span class="type-annotation"><a href="agora_rtc_engine/AgoraUserInfo-class.html">AgoraUserInfo</a></span> <span class="parameter-name">userInfo</span>, </span> <span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when the SDK gets the user ID and user account of the remote user.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onUserJoined" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onUserJoined.html">onUserJoined</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span> <span class="parameter" id="param-elapsed"><span class="type-annotation">int</span> <span class="parameter-name">elapsed</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when a remote user (Communication)/host (Live Broadcast) joins the channel. <a href="agora_rtc_engine/AgoraRtcEngine/onUserJoined.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onUserMuteAudio" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onUserMuteAudio.html">onUserMuteAudio</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span>, </span> <span class="parameter" id="param-muted"><span class="type-annotation">bool</span> <span class="parameter-name">muted</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when a remote user's audio stream is muted/unmuted.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onUserOffline" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onUserOffline.html">onUserOffline</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span> <span class="parameter" id="param-elapsed"><span class="type-annotation">int</span> <span class="parameter-name">elapsed</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when a remote user (Communication)/host (Live Broadcast) leaves the channel. <a href="agora_rtc_engine/AgoraRtcEngine/onUserOffline.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onVideoSizeChanged" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onVideoSizeChanged.html">onVideoSizeChanged</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span> <span class="parameter" id="param-width"><span class="type-annotation">double</span> <span class="parameter-name">width</span>, </span> <span class="parameter" id="param-height"><span class="type-annotation">double</span> <span class="parameter-name">height</span>, </span> <span class="parameter" id="param-rotation"><span class="type-annotation">int</span> <span class="parameter-name">rotation</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Occurs when a remote user's video stream is muted/unmuted.
+Occurs when the video size or rotation information of a specified remote user changes.
+                  <div class="features">read / write</div>
+</dd>
+        <dt id="onWarning" class="property">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/onWarning.html">onWarning</a></span>
+          <span class="signature">&#8596; void Function<span class="signature">(<span class="parameter" id="param-warn"><span class="type-annotation">int</span> <span class="parameter-name">warn</span></span>)</span></span>         
+        </dt>
+        <dd>
+          Reports a warning during SDK runtime. <a href="agora_rtc_engine/AgoraRtcEngine/onWarning.html">[...]</a>
+                  <div class="features">read / write</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="static-methods">
+      <h2>Static Methods</h2>
+      <dl class="callables">
+        <dt id="addInjectStreamUrl" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/addInjectStreamUrl.html">addInjectStreamUrl</a></span><span class="signature">(<wbr><span class="parameter" id="addInjectStreamUrl-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="addInjectStreamUrl-param-config"><span class="type-annotation"><a href="agora_rtc_engine/AgoraLiveInjectStreamConfig-class.html">AgoraLiveInjectStreamConfig</a></span> <span class="parameter-name">config</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">int</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Adds a voice or video stream RTMP URL address to a live broadcast.
+                  
+</dd>
+        <dt id="addPublishStreamUrl" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/addPublishStreamUrl.html">addPublishStreamUrl</a></span><span class="signature">(<wbr><span class="parameter" id="addPublishStreamUrl-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="addPublishStreamUrl-param-enable"><span class="type-annotation">bool</span> <span class="parameter-name">enable</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">int</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Publishes the local stream to the CDN.
+                  
+</dd>
+        <dt id="addVideoWatermark" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/addVideoWatermark.html">addVideoWatermark</a></span><span class="signature">(<wbr><span class="parameter" id="addVideoWatermark-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="addVideoWatermark-param-options"><span class="type-annotation"><a href="agora_rtc_engine/WatermarkOptions-class.html">WatermarkOptions</a></span> <span class="parameter-name">options</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Adds a watermark image to the local video. <a href="agora_rtc_engine/AgoraRtcEngine/addVideoWatermark.html">[...]</a>
+                  
+</dd>
+        <dt id="adjustAudioMixingPlayoutVolume" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/adjustAudioMixingPlayoutVolume.html">adjustAudioMixingPlayoutVolume</a></span><span class="signature">(<wbr><span class="parameter" id="adjustAudioMixingPlayoutVolume-param-volume"><span class="type-annotation">int</span> <span class="parameter-name">volume</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          adjustAudioMixingPlayoutVolume
+                  
+</dd>
+        <dt id="adjustAudioMixingPublishVolume" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/adjustAudioMixingPublishVolume.html">adjustAudioMixingPublishVolume</a></span><span class="signature">(<wbr><span class="parameter" id="adjustAudioMixingPublishVolume-param-volume"><span class="type-annotation">int</span> <span class="parameter-name">volume</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          adjustAudioMixingPublishVolume
+                  
+</dd>
+        <dt id="adjustAudioMixingVolume" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/adjustAudioMixingVolume.html">adjustAudioMixingVolume</a></span><span class="signature">(<wbr><span class="parameter" id="adjustAudioMixingVolume-param-volume"><span class="type-annotation">int</span> <span class="parameter-name">volume</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          adjustAudioMixingVolume
+                  
+</dd>
+        <dt id="adjustPlaybackSignalVolume" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/adjustPlaybackSignalVolume.html">adjustPlaybackSignalVolume</a></span><span class="signature">(<wbr><span class="parameter" id="adjustPlaybackSignalVolume-param-volume"><span class="type-annotation">int</span> <span class="parameter-name">volume</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Adjusts the playback volume of all remote users. <a href="agora_rtc_engine/AgoraRtcEngine/adjustPlaybackSignalVolume.html">[...]</a>
+                  
+</dd>
+        <dt id="adjustRecordingSignalVolume" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/adjustRecordingSignalVolume.html">adjustRecordingSignalVolume</a></span><span class="signature">(<wbr><span class="parameter" id="adjustRecordingSignalVolume-param-volume"><span class="type-annotation">int</span> <span class="parameter-name">volume</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Adjusts the recording volume. <a href="agora_rtc_engine/AgoraRtcEngine/adjustRecordingSignalVolume.html">[...]</a>
+                  
+</dd>
+        <dt id="clearVideoWatermarks" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/clearVideoWatermarks.html">clearVideoWatermarks</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Removes the watermark image from the video stream added by addVideoWatermark.
+                  
+</dd>
+        <dt id="create" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/create.html">create</a></span><span class="signature">(<wbr><span class="parameter" id="create-param-appid"><span class="type-annotation">String</span> <span class="parameter-name">appid</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Creates an RtcEngine instance. <a href="agora_rtc_engine/AgoraRtcEngine/create.html">[...]</a>
+                  
+</dd>
+        <dt id="createNativeView" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/createNativeView.html">createNativeView</a></span><span class="signature">(<wbr><span class="parameter" id="createNativeView-param-created"><span class="type-annotation">dynamic</span> <span class="parameter-name">created</span>(<span class="parameter" id="param-viewId"><span class="type-annotation">int</span> <span class="parameter-name">viewId</span></span>), {</span> <span class="parameter" id="createNativeView-param-key"><span class="type-annotation">Key</span> <span class="parameter-name">key</span></span> })
+            <span class="returntype parameter">&#8594; Widget</span>
+          </span>
+                  </dt>
+        <dd>
+          Creates the video renderer Widget. <a href="agora_rtc_engine/AgoraRtcEngine/createNativeView.html">[...]</a>
+                  
+</dd>
+        <dt id="destroy" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/destroy.html">destroy</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Destroys the RtcEngine instance and releases all resources used by the Agora SDK. <a href="agora_rtc_engine/AgoraRtcEngine/destroy.html">[...]</a>
+                  
+</dd>
+        <dt id="disableAudio" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/disableAudio.html">disableAudio</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Disables the audio module. <a href="agora_rtc_engine/AgoraRtcEngine/disableAudio.html">[...]</a>
+                  
+</dd>
+        <dt id="disableLastmileTest" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/disableLastmileTest.html">disableLastmileTest</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Disables the network connection quality test.
+                  
+</dd>
+        <dt id="disableVideo" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/disableVideo.html">disableVideo</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Disables the video module. <a href="agora_rtc_engine/AgoraRtcEngine/disableVideo.html">[...]</a>
+                  
+</dd>
+        <dt id="enableAudio" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/enableAudio.html">enableAudio</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Enables the audio module. <a href="agora_rtc_engine/AgoraRtcEngine/enableAudio.html">[...]</a>
+                  
+</dd>
+        <dt id="enableAudioVolumeIndication" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/enableAudioVolumeIndication.html">enableAudioVolumeIndication</a></span><span class="signature">(<wbr><span class="parameter" id="enableAudioVolumeIndication-param-interval"><span class="type-annotation">int</span> <span class="parameter-name">interval</span>, </span> <span class="parameter" id="enableAudioVolumeIndication-param-smooth"><span class="type-annotation">int</span> <span class="parameter-name">smooth</span>, </span> <span class="parameter" id="enableAudioVolumeIndication-param-vad"><span class="type-annotation">bool</span> <span class="parameter-name">vad</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Enables the <a href="agora_rtc_engine/AgoraRtcEngine/onAudioVolumeIndication.html">onAudioVolumeIndication</a> callback at a set time interval to report on which users are speaking and the speakers' volume. <a href="agora_rtc_engine/AgoraRtcEngine/enableAudioVolumeIndication.html">[...]</a>
+                  
+</dd>
+        <dt id="enableDualStreamMode" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/enableDualStreamMode.html">enableDualStreamMode</a></span><span class="signature">(<wbr><span class="parameter" id="enableDualStreamMode-param-enabled"><span class="type-annotation">bool</span> <span class="parameter-name">enabled</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Enables/Disables dual-stream mode. <a href="agora_rtc_engine/AgoraRtcEngine/enableDualStreamMode.html">[...]</a>
+                  
+</dd>
+        <dt id="enableInEarMonitoring" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/enableInEarMonitoring.html">enableInEarMonitoring</a></span><span class="signature">(<wbr><span class="parameter" id="enableInEarMonitoring-param-enabled"><span class="type-annotation">bool</span> <span class="parameter-name">enabled</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          enableInEarMonitoring
+                  
+</dd>
+        <dt id="enableLastmileTest" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/enableLastmileTest.html">enableLastmileTest</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Enables the network connection quality test.
+                  
+</dd>
+        <dt id="enableLocalAudio" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/enableLocalAudio.html">enableLocalAudio</a></span><span class="signature">(<wbr><span class="parameter" id="enableLocalAudio-param-enabled"><span class="type-annotation">bool</span> <span class="parameter-name">enabled</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Enables/Disables the local audio capture. <a href="agora_rtc_engine/AgoraRtcEngine/enableLocalAudio.html">[...]</a>
+                  
+</dd>
+        <dt id="enableLocalVideo" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/enableLocalVideo.html">enableLocalVideo</a></span><span class="signature">(<wbr><span class="parameter" id="enableLocalVideo-param-enabled"><span class="type-annotation">bool</span> <span class="parameter-name">enabled</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Disables/Re-enables the local video capture. <a href="agora_rtc_engine/AgoraRtcEngine/enableLocalVideo.html">[...]</a>
+                  
+</dd>
+        <dt id="enableSoundPositionIndication" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/enableSoundPositionIndication.html">enableSoundPositionIndication</a></span><span class="signature">(<wbr><span class="parameter" id="enableSoundPositionIndication-param-enabled"><span class="type-annotation">bool</span> <span class="parameter-name">enabled</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Enables/Disables stereo panning for remote users. <a href="agora_rtc_engine/AgoraRtcEngine/enableSoundPositionIndication.html">[...]</a>
+                  
+</dd>
+        <dt id="enableVideo" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/enableVideo.html">enableVideo</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Enables the video module. <a href="agora_rtc_engine/AgoraRtcEngine/enableVideo.html">[...]</a>
+                  
+</dd>
+        <dt id="enableWebSdkInteroperability" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/enableWebSdkInteroperability.html">enableWebSdkInteroperability</a></span><span class="signature">(<wbr><span class="parameter" id="enableWebSdkInteroperability-param-enabled"><span class="type-annotation">bool</span> <span class="parameter-name">enabled</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Enables interoperability with the Agora Web SDK (Live Broadcast only). <a href="agora_rtc_engine/AgoraRtcEngine/enableWebSdkInteroperability.html">[...]</a>
+                  
+</dd>
+        <dt id="getAudioMixingCurrentPosition" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/getAudioMixingCurrentPosition.html">getAudioMixingCurrentPosition</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">int</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          startAudioMixing
+                  
+</dd>
+        <dt id="getAudioMixingDuration" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/getAudioMixingDuration.html">getAudioMixingDuration</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">int</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          startAudioMixing
+                  
+</dd>
+        <dt id="getAudioMixingPlayoutVolume" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/getAudioMixingPlayoutVolume.html">getAudioMixingPlayoutVolume</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">int</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          getAudioMixingPlayoutVolume
+                  
+</dd>
+        <dt id="getAudioMixingPublishVolume" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/getAudioMixingPublishVolume.html">getAudioMixingPublishVolume</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">int</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          getAudioMixingPublishVolume
+                  
+</dd>
+        <dt id="getConnectionState" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/getConnectionState.html">getConnectionState</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">int</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Gets the connection state of the SDK. <a href="agora_rtc_engine/AgoraRtcEngine/getConnectionState.html">[...]</a>
+                  
+</dd>
+        <dt id="getEffectsVolume" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/getEffectsVolume.html">getEffectsVolume</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">double</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          getEffectsVolume
+                  
+</dd>
+        <dt id="getParameters" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/getParameters.html">getParameters</a></span><span class="signature">(<wbr><span class="parameter" id="getParameters-param-params"><span class="type-annotation">String</span> <span class="parameter-name">params</span></span> <span class="parameter" id="getParameters-param-args"><span class="type-annotation">String</span> <span class="parameter-name">args</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          
+                  
+</dd>
+        <dt id="getSdkVersion" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/getSdkVersion.html">getSdkVersion</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Gets the SDK version.
+                  
+</dd>
+        <dt id="getUserInfoByUid" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/getUserInfoByUid.html">getUserInfoByUid</a></span><span class="signature">(<wbr><span class="parameter" id="getUserInfoByUid-param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter"><a href="agora_rtc_engine/AgoraUserInfo-class.html">AgoraUserInfo</a></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Gets the user information by passing in the user ID. <a href="agora_rtc_engine/AgoraRtcEngine/getUserInfoByUid.html">[...]</a>
+                  
+</dd>
+        <dt id="getUserInfoByUserAccount" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/getUserInfoByUserAccount.html">getUserInfoByUserAccount</a></span><span class="signature">(<wbr><span class="parameter" id="getUserInfoByUserAccount-param-userAccount"><span class="type-annotation">String</span> <span class="parameter-name">userAccount</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter"><a href="agora_rtc_engine/AgoraUserInfo-class.html">AgoraUserInfo</a></span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Gets the user information by passing in the user account. <a href="agora_rtc_engine/AgoraRtcEngine/getUserInfoByUserAccount.html">[...]</a>
+                  
+</dd>
+        <dt id="isSpeakerphoneEnabled" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/isSpeakerphoneEnabled.html">isSpeakerphoneEnabled</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">bool</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Checks whether the speakerphone is enabled. <a href="agora_rtc_engine/AgoraRtcEngine/isSpeakerphoneEnabled.html">[...]</a>
+                  
+</dd>
+        <dt id="joinChannel" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/joinChannel.html">joinChannel</a></span><span class="signature">(<wbr><span class="parameter" id="joinChannel-param-token"><span class="type-annotation">String</span> <span class="parameter-name">token</span>, </span> <span class="parameter" id="joinChannel-param-channelId"><span class="type-annotation">String</span> <span class="parameter-name">channelId</span>, </span> <span class="parameter" id="joinChannel-param-info"><span class="type-annotation">String</span> <span class="parameter-name">info</span>, </span> <span class="parameter" id="joinChannel-param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">bool</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Allows a user to join a channel. <a href="agora_rtc_engine/AgoraRtcEngine/joinChannel.html">[...]</a>
+                  
+</dd>
+        <dt id="joinChannelByUserAccount" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/joinChannelByUserAccount.html">joinChannelByUserAccount</a></span><span class="signature">(<wbr><span class="parameter" id="joinChannelByUserAccount-param-args"><span class="type-annotation">Map<span class="signature">&lt;<wbr><span class="type-parameter">String</span>, <span class="type-parameter">String</span>&gt;</span></span> <span class="parameter-name">args</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">bool</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          joinChannelByUserAccount <a href="agora_rtc_engine/AgoraRtcEngine/joinChannelByUserAccount.html">[...]</a>
+                  
+</dd>
+        <dt id="leaveChannel" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/leaveChannel.html">leaveChannel</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">bool</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Allows a user to leave a channel. <a href="agora_rtc_engine/AgoraRtcEngine/leaveChannel.html">[...]</a>
+                  
+</dd>
+        <dt id="muteAllRemoteAudioStreams" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/muteAllRemoteAudioStreams.html">muteAllRemoteAudioStreams</a></span><span class="signature">(<wbr><span class="parameter" id="muteAllRemoteAudioStreams-param-muted"><span class="type-annotation">bool</span> <span class="parameter-name">muted</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Receives/Stops receiving all remote audio streams. <a href="agora_rtc_engine/AgoraRtcEngine/muteAllRemoteAudioStreams.html">[...]</a>
+                  
+</dd>
+        <dt id="muteAllRemoteVideoStreams" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/muteAllRemoteVideoStreams.html">muteAllRemoteVideoStreams</a></span><span class="signature">(<wbr><span class="parameter" id="muteAllRemoteVideoStreams-param-muted"><span class="type-annotation">bool</span> <span class="parameter-name">muted</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Receives/Stops receiving all remote video streams. <a href="agora_rtc_engine/AgoraRtcEngine/muteAllRemoteVideoStreams.html">[...]</a>
+                  
+</dd>
+        <dt id="muteLocalAudioStream" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/muteLocalAudioStream.html">muteLocalAudioStream</a></span><span class="signature">(<wbr><span class="parameter" id="muteLocalAudioStream-param-muted"><span class="type-annotation">bool</span> <span class="parameter-name">muted</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Stops/Resumes sending the local audio stream. <a href="agora_rtc_engine/AgoraRtcEngine/muteLocalAudioStream.html">[...]</a>
+                  
+</dd>
+        <dt id="muteLocalVideoStream" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/muteLocalVideoStream.html">muteLocalVideoStream</a></span><span class="signature">(<wbr><span class="parameter" id="muteLocalVideoStream-param-muted"><span class="type-annotation">bool</span> <span class="parameter-name">muted</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sends/Stops sending the local video stream. <a href="agora_rtc_engine/AgoraRtcEngine/muteLocalVideoStream.html">[...]</a>
+                  
+</dd>
+        <dt id="muteRemoteAudioStream" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/muteRemoteAudioStream.html">muteRemoteAudioStream</a></span><span class="signature">(<wbr><span class="parameter" id="muteRemoteAudioStream-param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span>, </span> <span class="parameter" id="muteRemoteAudioStream-param-muted"><span class="type-annotation">bool</span> <span class="parameter-name">muted</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Receives/Stops receiving a specified audio stream. <a href="agora_rtc_engine/AgoraRtcEngine/muteRemoteAudioStream.html">[...]</a>
+                  
+</dd>
+        <dt id="muteRemoteVideoStream" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/muteRemoteVideoStream.html">muteRemoteVideoStream</a></span><span class="signature">(<wbr><span class="parameter" id="muteRemoteVideoStream-param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span>, </span> <span class="parameter" id="muteRemoteVideoStream-param-muted"><span class="type-annotation">bool</span> <span class="parameter-name">muted</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Receives/Stops receiving a specified remote user's video stream. <a href="agora_rtc_engine/AgoraRtcEngine/muteRemoteVideoStream.html">[...]</a>
+                  
+</dd>
+        <dt id="pauseAllEffects" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/pauseAllEffects.html">pauseAllEffects</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          pauseAllEffects
+                  
+</dd>
+        <dt id="pauseAudioMixing" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/pauseAudioMixing.html">pauseAudioMixing</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          pauseAudioMixing
+                  
+</dd>
+        <dt id="pauseEffect" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/pauseEffect.html">pauseEffect</a></span><span class="signature">(<wbr><span class="parameter" id="pauseEffect-param-soundId"><span class="type-annotation">int</span> <span class="parameter-name">soundId</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          pauseEffect
+                  
+</dd>
+        <dt id="playEffect" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/playEffect.html">playEffect</a></span><span class="signature">(<wbr><span class="parameter" id="playEffect-param-soundId"><span class="type-annotation">int</span> <span class="parameter-name">soundId</span>, </span> <span class="parameter" id="playEffect-param-filepath"><span class="type-annotation">String</span> <span class="parameter-name">filepath</span>, </span> <span class="parameter" id="playEffect-param-loopcount"><span class="type-annotation">int</span> <span class="parameter-name">loopcount</span>, </span> <span class="parameter" id="playEffect-param-pitch"><span class="type-annotation">double</span> <span class="parameter-name">pitch</span>, </span> <span class="parameter" id="playEffect-param-pan"><span class="type-annotation">double</span> <span class="parameter-name">pan</span>, </span> <span class="parameter" id="playEffect-param-gain"><span class="type-annotation">double</span> <span class="parameter-name">gain</span>, </span> <span class="parameter" id="playEffect-param-publish"><span class="type-annotation">bool</span> <span class="parameter-name">publish</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          playEffect
+                  
+</dd>
+        <dt id="preloadEffect" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/preloadEffect.html">preloadEffect</a></span><span class="signature">(<wbr><span class="parameter" id="preloadEffect-param-soundId"><span class="type-annotation">int</span> <span class="parameter-name">soundId</span>, </span> <span class="parameter" id="preloadEffect-param-filepath"><span class="type-annotation">String</span> <span class="parameter-name">filepath</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          preloadEffect
+                  
+</dd>
+        <dt id="registerLocalUserAccount" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/registerLocalUserAccount.html">registerLocalUserAccount</a></span><span class="signature">(<wbr><span class="parameter" id="registerLocalUserAccount-param-args"><span class="type-annotation">Map<span class="signature">&lt;<wbr><span class="type-parameter">String</span>, <span class="type-parameter">String</span>&gt;</span></span> <span class="parameter-name">args</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">bool</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Registers a user account. <a href="agora_rtc_engine/AgoraRtcEngine/registerLocalUserAccount.html">[...]</a>
+                  
+</dd>
+        <dt id="removeChannelMediaRelay" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/removeChannelMediaRelay.html">removeChannelMediaRelay</a></span><span class="signature">(<wbr><span class="parameter" id="removeChannelMediaRelay-param-config"><span class="type-annotation"><a href="agora_rtc_engine/AgoraChannelMediaRelayConfiguration-class.html">AgoraChannelMediaRelayConfiguration</a></span> <span class="parameter-name">config</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          removeChannelMediaRelay
+                  
+</dd>
+        <dt id="removeInjectStreamUrl" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/removeInjectStreamUrl.html">removeInjectStreamUrl</a></span><span class="signature">(<wbr><span class="parameter" id="removeInjectStreamUrl-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">int</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Removes the voice or video stream RTMP URL address from a live broadcast.
+                  
+</dd>
+        <dt id="removeNativeView" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/removeNativeView.html">removeNativeView</a></span><span class="signature">(<wbr><span class="parameter" id="removeNativeView-param-viewId"><span class="type-annotation">int</span> <span class="parameter-name">viewId</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Remove the video renderer Widget.
+                  
+</dd>
+        <dt id="removePublishStreamUrl" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/removePublishStreamUrl.html">removePublishStreamUrl</a></span><span class="signature">(<wbr><span class="parameter" id="removePublishStreamUrl-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">int</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Removes an RTMP stream from the CDN.
+                  
+</dd>
+        <dt id="renewToken" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/renewToken.html">renewToken</a></span><span class="signature">(<wbr><span class="parameter" id="renewToken-param-token"><span class="type-annotation">String</span> <span class="parameter-name">token</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Renews the token when the current token expires. <a href="agora_rtc_engine/AgoraRtcEngine/renewToken.html">[...]</a>
+                  
+</dd>
+        <dt id="resumeAllEffects" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/resumeAllEffects.html">resumeAllEffects</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          resumeAllEffects
+                  
+</dd>
+        <dt id="resumeAudioMixing" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/resumeAudioMixing.html">resumeAudioMixing</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          resumeAudioMixing
+                  
+</dd>
+        <dt id="resumeEffect" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/resumeEffect.html">resumeEffect</a></span><span class="signature">(<wbr><span class="parameter" id="resumeEffect-param-soundId"><span class="type-annotation">int</span> <span class="parameter-name">soundId</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          resumeEffect
+                  
+</dd>
+        <dt id="setAudioMixingPosition" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setAudioMixingPosition.html">setAudioMixingPosition</a></span><span class="signature">(<wbr><span class="parameter" id="setAudioMixingPosition-param-pos"><span class="type-annotation">int</span> <span class="parameter-name">pos</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          setAudioMixingPosition
+                  
+</dd>
+        <dt id="setAudioProfile" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setAudioProfile.html">setAudioProfile</a></span><span class="signature">(<wbr><span class="parameter" id="setAudioProfile-param-profile"><span class="type-annotation"><a href="agora_rtc_engine/AudioProfile-class.html">AudioProfile</a></span> <span class="parameter-name">profile</span>, </span> <span class="parameter" id="setAudioProfile-param-scenario"><span class="type-annotation"><a href="agora_rtc_engine/AudioScenario-class.html">AudioScenario</a></span> <span class="parameter-name">scenario</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the audio parameters and application scenarios. <a href="agora_rtc_engine/AgoraRtcEngine/setAudioProfile.html">[...]</a>
+                  
+</dd>
+        <dt id="setBeautyEffectOptions" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setBeautyEffectOptions.html">setBeautyEffectOptions</a></span><span class="signature">(<wbr><span class="parameter" id="setBeautyEffectOptions-param-enabled"><span class="type-annotation">bool</span> <span class="parameter-name">enabled</span>, </span> <span class="parameter" id="setBeautyEffectOptions-param-options"><span class="type-annotation"><a href="agora_rtc_engine/BeautyOptions-class.html">BeautyOptions</a></span> <span class="parameter-name">options</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Enables/Disables image enhancement and sets the options. <a href="agora_rtc_engine/AgoraRtcEngine/setBeautyEffectOptions.html">[...]</a>
+                  
+</dd>
+        <dt id="setChannelProfile" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setChannelProfile.html">setChannelProfile</a></span><span class="signature">(<wbr><span class="parameter" id="setChannelProfile-param-profile"><span class="type-annotation"><a href="agora_rtc_engine/ChannelProfile-class.html">ChannelProfile</a></span> <span class="parameter-name">profile</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the channel profile of the AgoraRtcEngine. <a href="agora_rtc_engine/AgoraRtcEngine/setChannelProfile.html">[...]</a>
+                  
+</dd>
+        <dt id="setClientRole" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setClientRole.html">setClientRole</a></span><span class="signature">(<wbr><span class="parameter" id="setClientRole-param-role"><span class="type-annotation"><a href="agora_rtc_engine/ClientRole-class.html">ClientRole</a></span> <span class="parameter-name">role</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the role of a user (Live Broadcast only). <a href="agora_rtc_engine/AgoraRtcEngine/setClientRole.html">[...]</a>
+                  
+</dd>
+        <dt id="setDefaultAudioRouteToSpeaker" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setDefaultAudioRouteToSpeaker.html">setDefaultAudioRouteToSpeaker</a></span><span class="signature">(<wbr><span class="parameter" id="setDefaultAudioRouteToSpeaker-param-defaultToSpeaker"><span class="type-annotation">bool</span> <span class="parameter-name">defaultToSpeaker</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the default audio playback route. <a href="agora_rtc_engine/AgoraRtcEngine/setDefaultAudioRouteToSpeaker.html">[...]</a>
+                  
+</dd>
+        <dt id="setDefaultMuteAllRemoteAudioStreams" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setDefaultMuteAllRemoteAudioStreams.html">setDefaultMuteAllRemoteAudioStreams</a></span><span class="signature">(<wbr><span class="parameter" id="setDefaultMuteAllRemoteAudioStreams-param-muted"><span class="type-annotation">bool</span> <span class="parameter-name">muted</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets whether to receive all remote audio streams by default. <a href="agora_rtc_engine/AgoraRtcEngine/setDefaultMuteAllRemoteAudioStreams.html">[...]</a>
+                  
+</dd>
+        <dt id="setDefaultMuteAllRemoteVideoStreams" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setDefaultMuteAllRemoteVideoStreams.html">setDefaultMuteAllRemoteVideoStreams</a></span><span class="signature">(<wbr><span class="parameter" id="setDefaultMuteAllRemoteVideoStreams-param-muted"><span class="type-annotation">bool</span> <span class="parameter-name">muted</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets whether to receive all remote video streams by default. <a href="agora_rtc_engine/AgoraRtcEngine/setDefaultMuteAllRemoteVideoStreams.html">[...]</a>
+                  
+</dd>
+        <dt id="setEffectsVolume" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setEffectsVolume.html">setEffectsVolume</a></span><span class="signature">(<wbr><span class="parameter" id="setEffectsVolume-param-volume"><span class="type-annotation">double</span> <span class="parameter-name">volume</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          setEffectsVolume
+                  
+</dd>
+        <dt id="setEnableSpeakerphone" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setEnableSpeakerphone.html">setEnableSpeakerphone</a></span><span class="signature">(<wbr><span class="parameter" id="setEnableSpeakerphone-param-enabled"><span class="type-annotation">bool</span> <span class="parameter-name">enabled</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Enables/Disables the audio playback route to the speakerphone. <a href="agora_rtc_engine/AgoraRtcEngine/setEnableSpeakerphone.html">[...]</a>
+                  
+</dd>
+        <dt id="setEncryptionMode" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setEncryptionMode.html">setEncryptionMode</a></span><span class="signature">(<wbr><span class="parameter" id="setEncryptionMode-param-encryptionMode"><span class="type-annotation">String</span> <span class="parameter-name">encryptionMode</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the built-in encryption mode. <a href="agora_rtc_engine/AgoraRtcEngine/setEncryptionMode.html">[...]</a>
+                  
+</dd>
+        <dt id="setEncryptionSecret" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setEncryptionSecret.html">setEncryptionSecret</a></span><span class="signature">(<wbr><span class="parameter" id="setEncryptionSecret-param-secret"><span class="type-annotation">String</span> <span class="parameter-name">secret</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Enables built-in encryption with an encryption password before joining a channel. <a href="agora_rtc_engine/AgoraRtcEngine/setEncryptionSecret.html">[...]</a>
+                  
+</dd>
+        <dt id="setInEarMonitoringVolume" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setInEarMonitoringVolume.html">setInEarMonitoringVolume</a></span><span class="signature">(<wbr><span class="parameter" id="setInEarMonitoringVolume-param-volume"><span class="type-annotation">int</span> <span class="parameter-name">volume</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          setInEarMonitoringVolume
+                  
+</dd>
+        <dt id="setLiveTranscoding" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setLiveTranscoding.html">setLiveTranscoding</a></span><span class="signature">(<wbr><span class="parameter" id="setLiveTranscoding-param-config"><span class="type-annotation"><a href="agora_rtc_engine/AgoraLiveTranscoding-class.html">AgoraLiveTranscoding</a></span> <span class="parameter-name">config</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">int</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the video layout and audio settings for CDN live. (CDN live only.)
+                  
+</dd>
+        <dt id="setLocalPublishFallbackOption" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setLocalPublishFallbackOption.html">setLocalPublishFallbackOption</a></span><span class="signature">(<wbr><span class="parameter" id="setLocalPublishFallbackOption-param-options"><span class="type-annotation"><a href="agora_rtc_engine/StreamFallbackOptions-class.html">StreamFallbackOptions</a></span> <span class="parameter-name">options</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the fallback option for the locally published video stream based on the network conditions. <a href="agora_rtc_engine/AgoraRtcEngine/setLocalPublishFallbackOption.html">[...]</a>
+                  
+</dd>
+        <dt id="setLocalRenderMode" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setLocalRenderMode.html">setLocalRenderMode</a></span><span class="signature">(<wbr><span class="parameter" id="setLocalRenderMode-param-renderMode"><span class="type-annotation"><a href="agora_rtc_engine/VideoRenderMode-class.html">VideoRenderMode</a></span> <span class="parameter-name">renderMode</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the local video display mode. <a href="agora_rtc_engine/AgoraRtcEngine/setLocalRenderMode.html">[...]</a>
+                  
+</dd>
+        <dt id="setLocalVoiceChanger" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setLocalVoiceChanger.html">setLocalVoiceChanger</a></span><span class="signature">(<wbr><span class="parameter" id="setLocalVoiceChanger-param-changer"><span class="type-annotation"><a href="agora_rtc_engine/VoiceChanger-class.html">VoiceChanger</a></span> <span class="parameter-name">changer</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the local voice changer option. <a href="agora_rtc_engine/AgoraRtcEngine/setLocalVoiceChanger.html">[...]</a>
+                  
+</dd>
+        <dt id="setLocalVoiceEqualizationOfBandFrequency" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setLocalVoiceEqualizationOfBandFrequency.html">setLocalVoiceEqualizationOfBandFrequency</a></span><span class="signature">(<wbr><span class="parameter" id="setLocalVoiceEqualizationOfBandFrequency-param-bandFrequency"><span class="type-annotation"><a href="agora_rtc_engine/AgoraAudioEqualizationBandFrequency-class.html">AgoraAudioEqualizationBandFrequency</a></span> <span class="parameter-name">bandFrequency</span>, </span> <span class="parameter" id="setLocalVoiceEqualizationOfBandFrequency-param-gain"><span class="type-annotation">int</span> <span class="parameter-name">gain</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the local voice equalization effect.
+                  
+</dd>
+        <dt id="setLocalVoicePitch" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setLocalVoicePitch.html">setLocalVoicePitch</a></span><span class="signature">(<wbr><span class="parameter" id="setLocalVoicePitch-param-pitch"><span class="type-annotation">double</span> <span class="parameter-name">pitch</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Changes the voice pitch of the local speaker <a href="agora_rtc_engine/AgoraRtcEngine/setLocalVoicePitch.html">[...]</a>
+                  
+</dd>
+        <dt id="setLocalVoiceReverbOfType" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setLocalVoiceReverbOfType.html">setLocalVoiceReverbOfType</a></span><span class="signature">(<wbr><span class="parameter" id="setLocalVoiceReverbOfType-param-reverbType"><span class="type-annotation"><a href="agora_rtc_engine/AgoraAudioReverbType-class.html">AgoraAudioReverbType</a></span> <span class="parameter-name">reverbType</span>, </span> <span class="parameter" id="setLocalVoiceReverbOfType-param-value"><span class="type-annotation">int</span> <span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the local voice reverberation.
+Sets the effect of the reverberation type. See <a href="https://docs.agora.io/en/Interactive%20Broadcast/API%20Reference/oc/Constants/AgoraAudioReverbType.html">AgoraAudioReverbType</a> for the value range.
+                  
+</dd>
+        <dt id="setLocalVoiceReverbPreset" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setLocalVoiceReverbPreset.html">setLocalVoiceReverbPreset</a></span><span class="signature">(<wbr><span class="parameter" id="setLocalVoiceReverbPreset-param-reverbType"><span class="type-annotation"><a href="agora_rtc_engine/AgoraAudioReverbType-class.html">AgoraAudioReverbType</a></span> <span class="parameter-name">reverbType</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the preset local voice reverberation effect.
+                  
+</dd>
+        <dt id="setLogFile" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setLogFile.html">setLogFile</a></span><span class="signature">(<wbr><span class="parameter" id="setLogFile-param-filePath"><span class="type-annotation">String</span> <span class="parameter-name">filePath</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          
+                  
+</dd>
+        <dt id="setLogFileSize" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setLogFileSize.html">setLogFileSize</a></span><span class="signature">(<wbr><span class="parameter" id="setLogFileSize-param-fileSizeInKBytes"><span class="type-annotation">int</span> <span class="parameter-name">fileSizeInKBytes</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          
+                  
+</dd>
+        <dt id="setLogFilter" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setLogFilter.html">setLogFilter</a></span><span class="signature">(<wbr><span class="parameter" id="setLogFilter-param-filter"><span class="type-annotation">int</span> <span class="parameter-name">filter</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          
+                  
+</dd>
+        <dt id="setParameters" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setParameters.html">setParameters</a></span><span class="signature">(<wbr><span class="parameter" id="setParameters-param-params"><span class="type-annotation">String</span> <span class="parameter-name">params</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">int</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          
+                  
+</dd>
+        <dt id="setRemoteDefaultVideoStreamType" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setRemoteDefaultVideoStreamType.html">setRemoteDefaultVideoStreamType</a></span><span class="signature">(<wbr><span class="parameter" id="setRemoteDefaultVideoStreamType-param-streamType"><span class="type-annotation">int</span> <span class="parameter-name">streamType</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the default video-stream type of the remotely subscribed video stream when the remote user sends dual streams.
+                  
+</dd>
+        <dt id="setRemoteRenderMode" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setRemoteRenderMode.html">setRemoteRenderMode</a></span><span class="signature">(<wbr><span class="parameter" id="setRemoteRenderMode-param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span>, </span> <span class="parameter" id="setRemoteRenderMode-param-renderMode"><span class="type-annotation"><a href="agora_rtc_engine/VideoRenderMode-class.html">VideoRenderMode</a></span> <span class="parameter-name">renderMode</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the remote video display mode. <a href="agora_rtc_engine/AgoraRtcEngine/setRemoteRenderMode.html">[...]</a>
+                  
+</dd>
+        <dt id="setRemoteSubscribeFallbackOption" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setRemoteSubscribeFallbackOption.html">setRemoteSubscribeFallbackOption</a></span><span class="signature">(<wbr><span class="parameter" id="setRemoteSubscribeFallbackOption-param-options"><span class="type-annotation"><a href="agora_rtc_engine/StreamFallbackOptions-class.html">StreamFallbackOptions</a></span> <span class="parameter-name">options</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the fallback option for the remotely subscribed video stream based on the network conditions.
+                  
+</dd>
+        <dt id="setRemoteUserPriority" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setRemoteUserPriority.html">setRemoteUserPriority</a></span><span class="signature">(<wbr><span class="parameter" id="setRemoteUserPriority-param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span>, </span> <span class="parameter" id="setRemoteUserPriority-param-userPriority"><span class="type-annotation"><a href="agora_rtc_engine/UserPriority-class.html">UserPriority</a></span> <span class="parameter-name">userPriority</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the priority of a remote user's media stream.  <a href="agora_rtc_engine/AgoraRtcEngine/setRemoteUserPriority.html">[...]</a>
+                  
+</dd>
+        <dt id="setRemoteVideoStreamType" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setRemoteVideoStreamType.html">setRemoteVideoStreamType</a></span><span class="signature">(<wbr><span class="parameter" id="setRemoteVideoStreamType-param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span> <span class="parameter" id="setRemoteVideoStreamType-param-streamType"><span class="type-annotation">int</span> <span class="parameter-name">streamType</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the video stream type of the remotely subscribed video stream when the remote user sends dual streams. <a href="agora_rtc_engine/AgoraRtcEngine/setRemoteVideoStreamType.html">[...]</a>
+                  
+</dd>
+        <dt id="setRemoteVoicePosition" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setRemoteVoicePosition.html">setRemoteVoicePosition</a></span><span class="signature">(<wbr><span class="parameter" id="setRemoteVoicePosition-param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span> <span class="parameter" id="setRemoteVoicePosition-param-pan"><span class="type-annotation">double</span> <span class="parameter-name">pan</span>, </span> <span class="parameter" id="setRemoteVoicePosition-param-gain"><span class="type-annotation">int</span> <span class="parameter-name">gain</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the sound position and gain of a remote user. <a href="agora_rtc_engine/AgoraRtcEngine/setRemoteVoicePosition.html">[...]</a>
+                  
+</dd>
+        <dt id="setupLocalVideo" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setupLocalVideo.html">setupLocalVideo</a></span><span class="signature">(<wbr><span class="parameter" id="setupLocalVideo-param-viewId"><span class="type-annotation">int</span> <span class="parameter-name">viewId</span>, </span> <span class="parameter" id="setupLocalVideo-param-renderMode"><span class="type-annotation"><a href="agora_rtc_engine/VideoRenderMode-class.html">VideoRenderMode</a></span> <span class="parameter-name">renderMode</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Initializes the local video view. <a href="agora_rtc_engine/AgoraRtcEngine/setupLocalVideo.html">[...]</a>
+                  
+</dd>
+        <dt id="setupRemoteVideo" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setupRemoteVideo.html">setupRemoteVideo</a></span><span class="signature">(<wbr><span class="parameter" id="setupRemoteVideo-param-viewId"><span class="type-annotation">int</span> <span class="parameter-name">viewId</span></span> <span class="parameter" id="setupRemoteVideo-param-renderMode"><span class="type-annotation"><a href="agora_rtc_engine/VideoRenderMode-class.html">VideoRenderMode</a></span> <span class="parameter-name">renderMode</span>, </span> <span class="parameter" id="setupRemoteVideo-param-uid"><span class="type-annotation">int</span> <span class="parameter-name">uid</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Initializes the video view of a remote user. <a href="agora_rtc_engine/AgoraRtcEngine/setupRemoteVideo.html">[...]</a>
+                  
+</dd>
+        <dt id="setVideoEncoderConfiguration" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setVideoEncoderConfiguration.html">setVideoEncoderConfiguration</a></span><span class="signature">(<wbr><span class="parameter" id="setVideoEncoderConfiguration-param-config"><span class="type-annotation"><a href="agora_rtc_engine/VideoEncoderConfiguration-class.html">VideoEncoderConfiguration</a></span> <span class="parameter-name">config</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Sets the video encoder configuration. <a href="agora_rtc_engine/AgoraRtcEngine/setVideoEncoderConfiguration.html">[...]</a>
+                  
+</dd>
+        <dt id="setVolumeOfEffect" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/setVolumeOfEffect.html">setVolumeOfEffect</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          setVolumeOfEffect
+                  
+</dd>
+        <dt id="startAudioMixing" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/startAudioMixing.html">startAudioMixing</a></span><span class="signature">(<wbr><span class="parameter" id="startAudioMixing-param-filepath"><span class="type-annotation">String</span> <span class="parameter-name">filepath</span>, </span> <span class="parameter" id="startAudioMixing-param-loopback"><span class="type-annotation">bool</span> <span class="parameter-name">loopback</span>, </span> <span class="parameter" id="startAudioMixing-param-replace"><span class="type-annotation">bool</span> <span class="parameter-name">replace</span>, </span> <span class="parameter" id="startAudioMixing-param-cycle"><span class="type-annotation">int</span> <span class="parameter-name">cycle</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          startAudioMixing
+                  
+</dd>
+        <dt id="startChannelMediaRelay" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/startChannelMediaRelay.html">startChannelMediaRelay</a></span><span class="signature">(<wbr><span class="parameter" id="startChannelMediaRelay-param-config"><span class="type-annotation"><a href="agora_rtc_engine/AgoraChannelMediaRelayConfiguration-class.html">AgoraChannelMediaRelayConfiguration</a></span> <span class="parameter-name">config</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          startChannelMediaRelay
+                  
+</dd>
+        <dt id="startEchoTestWithInterval" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/startEchoTestWithInterval.html">startEchoTestWithInterval</a></span><span class="signature">(<wbr><span class="parameter" id="startEchoTestWithInterval-param-interval"><span class="type-annotation">int</span> <span class="parameter-name">interval</span></span>)
+            <span class="returntype parameter">&#8594; Future</span>
+          </span>
+                  </dt>
+        <dd>
+          Starts an audio call test.
+                  
+</dd>
+        <dt id="startLastmileProbeTest" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/startLastmileProbeTest.html">startLastmileProbeTest</a></span><span class="signature">(<wbr><span class="parameter" id="startLastmileProbeTest-param-config"><span class="type-annotation"><a href="agora_rtc_engine/AgoraLastmileProbeConfig-class.html">AgoraLastmileProbeConfig</a></span> <span class="parameter-name">config</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Starts the last-mile network probe test.
+                  
+</dd>
+        <dt id="startPreview" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/startPreview.html">startPreview</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Starts the local video preview before joining a channel. <a href="agora_rtc_engine/AgoraRtcEngine/startPreview.html">[...]</a>
+                  
+</dd>
+        <dt id="stopAllEffects" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/stopAllEffects.html">stopAllEffects</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          stopAllEffects
+                  
+</dd>
+        <dt id="stopAudioMixing" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/stopAudioMixing.html">stopAudioMixing</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          stopAudioMixing
+                  
+</dd>
+        <dt id="stopChannelMediaRelay" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/stopChannelMediaRelay.html">stopChannelMediaRelay</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          stopChannelMediaRelay
+                  
+</dd>
+        <dt id="stopEchoTest" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/stopEchoTest.html">stopEchoTest</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Stops the audio call test.
+                  
+</dd>
+        <dt id="stopEffect" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/stopEffect.html">stopEffect</a></span><span class="signature">(<wbr><span class="parameter" id="stopEffect-param-soundId"><span class="type-annotation">int</span> <span class="parameter-name">soundId</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          stopEffect
+                  
+</dd>
+        <dt id="stopLastmileProbeTest" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/stopLastmileProbeTest.html">stopLastmileProbeTest</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Stops the last-mile network probe test.
+                  
+</dd>
+        <dt id="stopPreview" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/stopPreview.html">stopPreview</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Stops the local video preview and the video. <a href="agora_rtc_engine/AgoraRtcEngine/stopPreview.html">[...]</a>
+                  
+</dd>
+        <dt id="switchCamera" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/switchCamera.html">switchCamera</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Switches between front and rear cameras.
+                  
+</dd>
+        <dt id="switchChannel" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/switchChannel.html">switchChannel</a></span><span class="signature">(<wbr><span class="parameter" id="switchChannel-param-token"><span class="type-annotation">String</span> <span class="parameter-name">token</span></span> <span class="parameter" id="switchChannel-param-channelId"><span class="type-annotation">String</span> <span class="parameter-name">channelId</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">bool</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          Switches to a different channel. <a href="agora_rtc_engine/AgoraRtcEngine/switchChannel.html">[...]</a>
+                  
+</dd>
+        <dt id="unloadEffect" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/unloadEffect.html">unloadEffect</a></span><span class="signature">(<wbr><span class="parameter" id="unloadEffect-param-soundId"><span class="type-annotation">int</span> <span class="parameter-name">soundId</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          unloadEffect
+                  
+</dd>
+        <dt id="updateChannelMediaRelay" class="callable">
+          <span class="name"><a href="agora_rtc_engine/AgoraRtcEngine/updateChannelMediaRelay.html">updateChannelMediaRelay</a></span><span class="signature">(<wbr><span class="parameter" id="updateChannelMediaRelay-param-config"><span class="type-annotation"><a href="agora_rtc_engine/AgoraChannelMediaRelayConfiguration-class.html">AgoraChannelMediaRelayConfiguration</a></span> <span class="parameter-name">config</span></span>)
+            <span class="returntype parameter">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+          </span>
+                  </dt>
+        <dd>
+          updateChannelMediaRelay
+                  
+</dd>
+      </dl>
+    </section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <ol>
+    
+      <li class="section-title"><a href="agora_rtc_engine/AgoraRtcEngine-class.html#constructors">Constructors</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/AgoraRtcEngine.html">AgoraRtcEngine</a></li>
+    
+      <li class="section-title inherited">
+        <a href="agora_rtc_engine/AgoraRtcEngine-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a href="agora_rtc_engine/AgoraRtcEngine/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="agora_rtc_engine/AgoraRtcEngine/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title inherited"><a href="agora_rtc_engine/AgoraRtcEngine-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"><a href="agora_rtc_engine/AgoraRtcEngine/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="agora_rtc_engine/AgoraRtcEngine/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="agora_rtc_engine/AgoraRtcEngine-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="agora_rtc_engine/AgoraRtcEngine/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="agora_rtc_engine/AgoraRtcEngine-class.html#static-properties">Static properties</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onActiveSpeaker.html">onActiveSpeaker</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onApiCallExecuted.html">onApiCallExecuted</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onAudioEffectFinished.html">onAudioEffectFinished</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onAudioRouteChanged.html">onAudioRouteChanged</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onAudioVolumeIndication.html">onAudioVolumeIndication</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onCameraExposureAreaChanged.html">onCameraExposureAreaChanged</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onCameraFocusAreaChanged.html">onCameraFocusAreaChanged</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onChannelMediaRelayChanged.html">onChannelMediaRelayChanged</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onClientRoleChanged.html">onClientRoleChanged</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onConnectionLost.html">onConnectionLost</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onConnectionStateChanged.html">onConnectionStateChanged</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onError.html">onError</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onFirstLocalAudioFrame.html">onFirstLocalAudioFrame</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onFirstLocalVideoFrame.html">onFirstLocalVideoFrame</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onFirstRemoteAudioDecoded.html">onFirstRemoteAudioDecoded</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onFirstRemoteAudioFrame.html">onFirstRemoteAudioFrame</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onFirstRemoteVideoFrame.html">onFirstRemoteVideoFrame</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onJoinChannelSuccess.html">onJoinChannelSuccess</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onLastmileProbeTestResult.html">onLastmileProbeTestResult</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onLastmileQuality.html">onLastmileQuality</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onLeaveChannel.html">onLeaveChannel</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onLocalAudioMixingStateChanged.html">onLocalAudioMixingStateChanged</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onLocalAudioStateChanged.html">onLocalAudioStateChanged</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onLocalAudioStats.html">onLocalAudioStats</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onLocalPublishFallbackToAudioOnly.html">onLocalPublishFallbackToAudioOnly</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onLocalVideoStateChanged.html">onLocalVideoStateChanged</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onLocalVideoStats.html">onLocalVideoStats</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onMediaEngineLoadSuccess.html">onMediaEngineLoadSuccess</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onMediaEngineStartCallSuccess.html">onMediaEngineStartCallSuccess</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onNetworkQuality.html">onNetworkQuality</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onNetworkTypeChanged.html">onNetworkTypeChanged</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onReceivedChannelMediaRelayEvent.html">onReceivedChannelMediaRelayEvent</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onRegisteredLocalUser.html">onRegisteredLocalUser</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onRejoinChannelSuccess.html">onRejoinChannelSuccess</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onRemoteAudioStateChanged.html">onRemoteAudioStateChanged</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onRemoteAudioStats.html">onRemoteAudioStats</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onRemoteSubscribeFallbackToAudioOnly.html">onRemoteSubscribeFallbackToAudioOnly</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onRemoteVideoStateChanged.html">onRemoteVideoStateChanged</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onRemoteVideoStats.html">onRemoteVideoStats</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onRequestToken.html">onRequestToken</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onRtcStats.html">onRtcStats</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onRtmpStreamingStateChanged.html">onRtmpStreamingStateChanged</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onStreamInjectedStatus.html">onStreamInjectedStatus</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onStreamPublished.html">onStreamPublished</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onStreamUnpublished.html">onStreamUnpublished</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onTokenPrivilegeWillExpire.html">onTokenPrivilegeWillExpire</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onTranscodingUpdated.html">onTranscodingUpdated</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onUpdatedUserInfo.html">onUpdatedUserInfo</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onUserJoined.html">onUserJoined</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onUserMuteAudio.html">onUserMuteAudio</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onUserOffline.html">onUserOffline</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onVideoSizeChanged.html">onVideoSizeChanged</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/onWarning.html">onWarning</a></li>
+    
+      <li class="section-title"><a href="agora_rtc_engine/AgoraRtcEngine-class.html#static-methods">Static methods</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/addInjectStreamUrl.html">addInjectStreamUrl</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/addPublishStreamUrl.html">addPublishStreamUrl</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/addVideoWatermark.html">addVideoWatermark</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/adjustAudioMixingPlayoutVolume.html">adjustAudioMixingPlayoutVolume</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/adjustAudioMixingPublishVolume.html">adjustAudioMixingPublishVolume</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/adjustAudioMixingVolume.html">adjustAudioMixingVolume</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/adjustPlaybackSignalVolume.html">adjustPlaybackSignalVolume</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/adjustRecordingSignalVolume.html">adjustRecordingSignalVolume</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/clearVideoWatermarks.html">clearVideoWatermarks</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/create.html">create</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/createNativeView.html">createNativeView</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/destroy.html">destroy</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/disableAudio.html">disableAudio</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/disableLastmileTest.html">disableLastmileTest</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/disableVideo.html">disableVideo</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/enableAudio.html">enableAudio</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/enableAudioVolumeIndication.html">enableAudioVolumeIndication</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/enableDualStreamMode.html">enableDualStreamMode</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/enableInEarMonitoring.html">enableInEarMonitoring</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/enableLastmileTest.html">enableLastmileTest</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/enableLocalAudio.html">enableLocalAudio</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/enableLocalVideo.html">enableLocalVideo</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/enableSoundPositionIndication.html">enableSoundPositionIndication</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/enableVideo.html">enableVideo</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/enableWebSdkInteroperability.html">enableWebSdkInteroperability</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/getAudioMixingCurrentPosition.html">getAudioMixingCurrentPosition</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/getAudioMixingDuration.html">getAudioMixingDuration</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/getAudioMixingPlayoutVolume.html">getAudioMixingPlayoutVolume</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/getAudioMixingPublishVolume.html">getAudioMixingPublishVolume</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/getConnectionState.html">getConnectionState</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/getEffectsVolume.html">getEffectsVolume</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/getParameters.html">getParameters</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/getSdkVersion.html">getSdkVersion</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/getUserInfoByUid.html">getUserInfoByUid</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/getUserInfoByUserAccount.html">getUserInfoByUserAccount</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/isSpeakerphoneEnabled.html">isSpeakerphoneEnabled</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/joinChannel.html">joinChannel</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/joinChannelByUserAccount.html">joinChannelByUserAccount</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/leaveChannel.html">leaveChannel</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/muteAllRemoteAudioStreams.html">muteAllRemoteAudioStreams</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/muteAllRemoteVideoStreams.html">muteAllRemoteVideoStreams</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/muteLocalAudioStream.html">muteLocalAudioStream</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/muteLocalVideoStream.html">muteLocalVideoStream</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/muteRemoteAudioStream.html">muteRemoteAudioStream</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/muteRemoteVideoStream.html">muteRemoteVideoStream</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/pauseAllEffects.html">pauseAllEffects</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/pauseAudioMixing.html">pauseAudioMixing</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/pauseEffect.html">pauseEffect</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/playEffect.html">playEffect</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/preloadEffect.html">preloadEffect</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/registerLocalUserAccount.html">registerLocalUserAccount</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/removeChannelMediaRelay.html">removeChannelMediaRelay</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/removeInjectStreamUrl.html">removeInjectStreamUrl</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/removeNativeView.html">removeNativeView</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/removePublishStreamUrl.html">removePublishStreamUrl</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/renewToken.html">renewToken</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/resumeAllEffects.html">resumeAllEffects</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/resumeAudioMixing.html">resumeAudioMixing</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/resumeEffect.html">resumeEffect</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setAudioMixingPosition.html">setAudioMixingPosition</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setAudioProfile.html">setAudioProfile</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setBeautyEffectOptions.html">setBeautyEffectOptions</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setChannelProfile.html">setChannelProfile</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setClientRole.html">setClientRole</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setDefaultAudioRouteToSpeaker.html">setDefaultAudioRouteToSpeaker</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setDefaultMuteAllRemoteAudioStreams.html">setDefaultMuteAllRemoteAudioStreams</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setDefaultMuteAllRemoteVideoStreams.html">setDefaultMuteAllRemoteVideoStreams</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setEffectsVolume.html">setEffectsVolume</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setEnableSpeakerphone.html">setEnableSpeakerphone</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setEncryptionMode.html">setEncryptionMode</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setEncryptionSecret.html">setEncryptionSecret</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setInEarMonitoringVolume.html">setInEarMonitoringVolume</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setLiveTranscoding.html">setLiveTranscoding</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setLocalPublishFallbackOption.html">setLocalPublishFallbackOption</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setLocalRenderMode.html">setLocalRenderMode</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setLocalVoiceChanger.html">setLocalVoiceChanger</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setLocalVoiceEqualizationOfBandFrequency.html">setLocalVoiceEqualizationOfBandFrequency</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setLocalVoicePitch.html">setLocalVoicePitch</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setLocalVoiceReverbOfType.html">setLocalVoiceReverbOfType</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setLocalVoiceReverbPreset.html">setLocalVoiceReverbPreset</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setLogFile.html">setLogFile</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setLogFileSize.html">setLogFileSize</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setLogFilter.html">setLogFilter</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setParameters.html">setParameters</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setRemoteDefaultVideoStreamType.html">setRemoteDefaultVideoStreamType</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setRemoteRenderMode.html">setRemoteRenderMode</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setRemoteSubscribeFallbackOption.html">setRemoteSubscribeFallbackOption</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setRemoteUserPriority.html">setRemoteUserPriority</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setRemoteVideoStreamType.html">setRemoteVideoStreamType</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setRemoteVoicePosition.html">setRemoteVoicePosition</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setupLocalVideo.html">setupLocalVideo</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setupRemoteVideo.html">setupRemoteVideo</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setVideoEncoderConfiguration.html">setVideoEncoderConfiguration</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/setVolumeOfEffect.html">setVolumeOfEffect</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/startAudioMixing.html">startAudioMixing</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/startChannelMediaRelay.html">startChannelMediaRelay</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/startEchoTestWithInterval.html">startEchoTestWithInterval</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/startLastmileProbeTest.html">startLastmileProbeTest</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/startPreview.html">startPreview</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/stopAllEffects.html">stopAllEffects</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/stopAudioMixing.html">stopAudioMixing</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/stopChannelMediaRelay.html">stopChannelMediaRelay</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/stopEchoTest.html">stopEchoTest</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/stopEffect.html">stopEffect</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/stopLastmileProbeTest.html">stopLastmileProbeTest</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/stopPreview.html">stopPreview</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/switchCamera.html">switchCamera</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/switchChannel.html">switchChannel</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/unloadEffect.html">unloadEffect</a></li>
+      <li><a href="agora_rtc_engine/AgoraRtcEngine/updateChannelMediaRelay.html">updateChannelMediaRelay</a></li>
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    agora_rtc_engine
+      1.0.12
+  </span>
+
+  <!-- footer-text placeholder -->
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- footer placeholder -->
+
+</body>
+
+</html>
